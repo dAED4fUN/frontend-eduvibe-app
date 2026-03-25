@@ -1,0 +1,43 @@
+
+
+export const PERMISSIONS = {
+  admin: {
+    canVerifyTeachers: true,
+    canManageDomains: true,
+    canBanUsers: true,
+    canViewAllUsers: true,
+    canCreateClass: false,
+    canViewStudents: false,
+    canUploadVideo: false,
+    canOnboard: false,
+    canEnroll: false,
+    canBrowseTeachers: false,
+    canSubmitFeedback: false,
+  },
+  teacher: {
+    canVerifyTeachers: false,
+    canManageDomains: false,
+    canBanUsers: false,
+    canViewAllUsers: false,
+    canCreateClass: true,
+    canViewStudents: true,
+    canUploadVideo: true,
+    canOnboard: true,
+    canEnroll: false,
+    canBrowseTeachers: false,
+    canSubmitFeedback: false,
+  },
+  student: {
+    canVerifyTeachers: false,
+    canManageDomains: false,
+    canBanUsers: false,
+    canViewAllUsers: false,
+    canCreateClass: false,
+    canViewStudents: false,
+    canUploadVideo: false,
+    canOnboard: false,
+    canEnroll: true,
+    canBrowseTeachers: true,
+    canSubmitFeedback: true,
+  },
+};
